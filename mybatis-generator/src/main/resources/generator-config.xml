@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <!-- 配置生成器 -->
 <generatorConfiguration>
-    <classPathEntry location="D:\Repository\mysql\mysql-connector-java\5.1.45\mysql-connector-java-5.1.45.jar"></classPathEntry>
+    <classPathEntry location="src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.45.jar"></classPathEntry>
     <context id="my" defaultModelType="hierarchical" targetRuntime="MyBatis3Simple">
         <!-- 生成的Java文件的编码 -->
         <property name="javaFileEncoding" value="UTF-8"/>
@@ -18,7 +18,7 @@
         <property name="endingDelimiter" value="`"/>
 
 
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/mybatis" userId="root"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://122.152.216.125:3306/mybatis" userId="root"
                         password="123456">
             <!-- 这里面可以设置property属性，每一个property属性都设置到配置的Driver上 -->
         </jdbcConnection>

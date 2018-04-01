@@ -1,7 +1,8 @@
-package org.mybatis.generator.mapper;
+package org.mybatis.study.web.dao;
+
+import org.mybatis.study.web.model.Blog;
 
 import java.util.List;
-import org.mybatis.generator.model.Blog;
 
 public interface BlogMapper {
     /**

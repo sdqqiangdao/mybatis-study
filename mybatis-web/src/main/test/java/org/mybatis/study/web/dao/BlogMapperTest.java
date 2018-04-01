@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations={"classpath:applicationContext.xml"})
+///@ContextConfiguration(locations={"classpath:applicationContext-bean.xml"})
 public class BlogMapperTest {
 
     @Autowired
@@ -30,7 +31,7 @@ public class BlogMapperTest {
 
     @Test
     public void selectByPrimaryKey() {
-        blogMapper.selectByPrimaryKey(1L);
+        System.out.println(blogMapper.selectByPrimaryKey(1L));
     }
 
     @Test

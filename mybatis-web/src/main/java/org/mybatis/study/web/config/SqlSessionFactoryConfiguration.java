@@ -18,7 +18,7 @@ import java.io.IOException;
  * @desc
  **/
 
-//@Configuration
+@Configuration
 public class SqlSessionFactoryConfiguration {
 
     @Value("${mybatis.config.file.path}")
@@ -34,7 +34,7 @@ public class SqlSessionFactoryConfiguration {
     @Qualifier(value = "dataSource")
     private DataSource dataSource;
 
-    //@Bean(name = "sqlSessionFactory")
+    @Bean(name = "sqlSessionFactory")
     public SqlSessionFactoryBean createSqlSessionFactoryBean() throws IOException {
         SqlSessionFactoryBean sqlSessionFactory = new SqlSessionFactoryBean();
 
@@ -51,5 +51,4 @@ public class SqlSessionFactoryConfiguration {
 
         return sqlSessionFactory;
     }
-
 }

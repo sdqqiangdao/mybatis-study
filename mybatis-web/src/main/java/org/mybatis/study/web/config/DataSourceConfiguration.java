@@ -14,8 +14,8 @@ import java.beans.PropertyVetoException;
  * @desc
  **/
 
-//@Configuration
-//@MapperScan(basePackages = {"org.mybatis.study.web.dao*"})
+@Configuration
+@MapperScan("org.mybatis.study.web.dao")
 public class DataSourceConfiguration {
 
     @Value("${jdbc.driver}")
@@ -30,7 +30,7 @@ public class DataSourceConfiguration {
     @Value("${jdbc.password}")
     private String password;
 
-    //@Bean(name = "dataSource")
+    @Bean(name = "dataSource")
     public ComboPooledDataSource createDataSource() throws PropertyVetoException {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         dataSource.setDriverClass(driverClass);

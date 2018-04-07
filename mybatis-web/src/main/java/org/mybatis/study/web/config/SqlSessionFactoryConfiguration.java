@@ -24,7 +24,7 @@ public class SqlSessionFactoryConfiguration {
     @Value("${mybatis.config.file.path}")
     private String mybatisConfigFilePath;
 
-    @Value("${mapper.path}")
+    @Value("${dao.path}")
     private String mapperPath;
 
     @Value("${model.package}")
